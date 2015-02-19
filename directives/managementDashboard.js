@@ -13,15 +13,29 @@
     function managementDashboard() {
 
         var directive = {
+            controller: controller,
             link: link,
             restrict: 'E',
-            scope: {}
+            scope: {
+                initUrl: '=',
+                refreshUrl: '@'
+            }
         };
         return directive;
 
+        function controller($scope, $element, $http) {
+
+            // TODO: create $http get request for 'initurl' to get widgets and initialStatus
+
+
+        }
+
         function link(scope, element, attrs) {
 
+            debugger;
 
+            var initUrl = scope.initurl;
+            var refreshUrl = scope.refreshurl;
 
         }
 
