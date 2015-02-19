@@ -13,31 +13,22 @@
     function managementDashboard() {
 
         var directive = {
-            controller: controller,
-            link: link,
+            controller: controllerFn,
+            link: linkFn,
             restrict: 'E',
-            scope: {
-                initUrl: '=',
-                refreshUrl: '@'
-            }
+            scope: {} // isolate directive scope
         };
         return directive;
 
-        function controller($scope, $element, $http) {
+        function controllerFn($scope, $element, $attrs, $http) {
 
-            // TODO: create $http get request for 'initurl' to get widgets and initialStatus
-
-
-        }
-
-        function link(scope, element, attrs) {
-
-            debugger;
-
-            var initUrl = scope.initurl;
-            var refreshUrl = scope.refreshurl;
+            // TODO: create $http get request for 'initUrl' to get widgets and initialStatus
+			$scope.initUrl = $attrs.initurl;
+			$scope.refreshUrl = $attrs.refreshurl;
 
         }
+
+        function linkFn(scope, element, attrs) { }
 
     }
 })();
