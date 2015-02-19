@@ -5,7 +5,7 @@
     'use strict';
 
     angular
-        .module('managementDashboard')
+        .module('managementDashboardApp')
         .directive('widgetStackedBarChart', widgetStackedBarChart);
 
     //widgetStackedBarChart.$inject = [];

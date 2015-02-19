@@ -5,7 +5,7 @@
     'use strict';
 
     angular
-        .module('managementDashboard')
+        .module('managementDashboardApp')
         .directive('widgetDonut', widgetDonut);
 
     //widgetDonut.$inject = [];
@@ -41,10 +41,6 @@
                 .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
 
             d3.csv("mock-endpoints/donut-data.csv", function(error, data) {
-
-                //data.forEach(function(d) {
-                //    d.population = + d.population;
-                //});
 
                 var g = svg.selectAll(".arc")
                     .data(pie(data))
