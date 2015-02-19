@@ -1,0 +1,73 @@
+{
+  "widgets": [
+    {
+      "id": "1",
+      "type": "PIE",
+      "height": 1,
+      "width": 14,
+      "status": "STATUS1"
+    },
+
+    {
+      "id": "2",
+      "type": "GROUP",
+      "height": 1,
+      "width": 15,
+      "status": "STATUS2",
+      "widgets": [
+
+        {
+          "id": "3",
+          "type": "STACK",
+          "height": 1,
+          "width": 5,
+          "status": "STATUS3"
+        },
+        {
+          "id": "4",
+          "type": "STACK",
+          "height": 1,
+          "width": 8,
+          "status": "STATUS4"
+        },
+        {
+          "id": "5",
+          "type": "STACK",
+          "height": 1,
+          "width": 9,
+          "status": "STATUS5"
+        }
+
+      ]
+    }
+  ],
+
+  "initialStatus": {
+    "widgets": [
+      {
+        "id": "1",
+        "height": 1,
+        "width": 10,
+        "status": "STATUS11"
+      },
+      {
+        "id": "3",
+        "height": 1,
+        "width": 6,
+        "status": "STATUS31"
+      },
+      {
+        "id": "4",
+        "height": 1,
+        "width": 10,
+        "status": "STATUS41"
+      },
+      {
+        "id": "5",
+        "height": 1,
+        "width": 10,
+        "status": "STATUS51"
+      }
+    ]
+  }
+}
